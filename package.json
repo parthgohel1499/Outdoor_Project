@@ -1,0 +1,40 @@
+{
+  "name": "password_api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec babel-node server.js",
+    "prod": "nodemon --exec babel-node ./server.js",
+    "dev": "nodemon --exec babel-node server.js",
+    "build": "babel src --out-dir dist",
+    "serve": "npm run build && node dist/server.js",
+    "seed": "node seed/$npm_config_first"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "crypto-random-string": "^3.3.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.1",
+    "express-validator": "^6.9.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.15",
+    "multer": "^1.4.2",
+    "nodemailer": "^6.4.17",
+    "pdf": "^0.1.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.6",
+    "@babel/core": "^7.12.16",
+    "@babel/node": "^7.12.16",
+    "@babel/preset-env": "^7.12.16",
+    "@babel/register": "^7.11.5",
+    "nodemon": "^2.0.4"
+  }
+}
